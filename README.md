@@ -44,3 +44,10 @@ Available here: https://rust-lang.github.io/api-guidelines/naming.html
 - `str` does not require heap allocation
 - `String` is heap allocated
 
+# Re-declaring Variables
+- Idiomatic for Rust
+- Beneficial in these three cases
+  - Convert mutable to immutable
+  - Dynamic typing: Rust makes it safe
+
+
