@@ -6,4 +6,5 @@
 - Mutability
 - More Testing
 - Ownership
+- Re-declaring Variables
 - Code Organization
