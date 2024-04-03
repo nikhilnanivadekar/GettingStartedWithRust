@@ -9,4 +9,13 @@ Rust focuses on speed, safety, semantics, and productivity. Rust can be consider
 - Parameters go in parentheses
 - `let` is used to define a variable: What about data types?
 - `mut` is used to make a variable mutable
+  - Immutable by default
+- Standard Data Structures: `List`, `Set`, `Map`
+- Code Arrangement in Modules
+- Inheritance: Struts
+- Enums
+- Function Access
+- Variable Scopes: Reference and value
+- Testing
+
 
