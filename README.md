@@ -35,3 +35,12 @@ Available here: https://rust-lang.github.io/api-guidelines/naming.html
 - There can only be one owner at a time
 - When the owner goes out of scope, the value will be dropped
 
+# Difference between `str` (String Slice) and `String`
+- Ref: https://dev.to/dsysd_dev/string-vs-str-in-rust-understanding-the-fundamental-differences-for-efficient-programming-4og8
+## Ownership
+- `str` is a borrowed reference to a portion of an existing string or string literal, and it does not own the data.
+- `String` owns the data it represents and is responsible for its memory allocation and deallocation.
+## Allocation
+- `str` does not require heap allocation
+- `String` is heap allocated
+
