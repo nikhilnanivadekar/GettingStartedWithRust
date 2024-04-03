@@ -18,4 +18,6 @@ Rust focuses on speed, safety, semantics, and productivity. Rust can be consider
 - Variable Scopes: Reference and value
 - Testing
 
+# Naming Conventions
+Available here: https://rust-lang.github.io/api-guidelines/naming.html
 
