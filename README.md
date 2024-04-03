@@ -21,3 +21,10 @@ Rust focuses on speed, safety, semantics, and productivity. Rust can be consider
 # Naming Conventions
 Available here: https://rust-lang.github.io/api-guidelines/naming.html
 
+# Ownership
+- System of ownership is used for memory management
+- Compiler checks for a set of rules: 
+  - If any of the rules are violated, it is a compile time error
+  - Hence, at runtime ownership does not slow down the execution time
+- Ownership helps to develop code that is safe and efficient
+- Ownership is one of the concepts that makes Rust unique
