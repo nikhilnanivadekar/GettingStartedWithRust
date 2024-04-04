@@ -1,6 +1,8 @@
-mod domain;
+pub mod domain;
 
 use std::collections::HashMap;
+use domain::Pet;
+use domain::PetType;
 
 
 fn add(first_number: i32, second_number: i32) -> i32 {
@@ -43,6 +45,9 @@ fn main() {
     println!("Conferences which Nikhil has presented so far in 2024 are {:?}", conferences);
     let javaland_country = conferences.get("Javaland").unwrap();
     println!("Javaland is in {javaland_country}");
+
+    let pet = Pet { name: String::from("Spike"), age: 2, pet_type: PetType::CAT };
+    println!("{:?}", pet)
 }
 
 #[cfg(test)]

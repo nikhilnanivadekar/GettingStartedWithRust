@@ -1,5 +1,5 @@
 #[derive(PartialEq, Debug, Clone)]
-enum PetType {
+pub(crate) enum PetType {
     DOG,
     CAT,
 }
@@ -12,10 +12,10 @@ struct Person {
 }
 
 #[derive(PartialEq, Debug, Clone)]
-struct Pet {
-    name: String,
-    age: i32,
-    pet_type: PetType,
+pub(crate) struct Pet {
+    pub(crate) name: String,
+    pub(crate) age: i32,
+    pub(crate) pet_type: PetType,
 }
 
 trait PersonOperations {
