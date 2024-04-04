@@ -40,7 +40,8 @@ fn add_pet(person: Person, pet: Pet) -> Person {
 
 #[cfg(test)]
 mod tests {
-    use crate::domain::{add_pet, Person, PersonOperations, Pet, PetType};
+    use crate::domain::domain::{add_pet, Person, PersonOperations, Pet, PetType};
+
     #[test]
     fn has_pet_test() {
         let mut expected_pets = Vec::new();

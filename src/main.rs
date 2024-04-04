@@ -1,8 +1,7 @@
-pub mod domain;
+mod domain;
 
 use std::collections::HashMap;
-use domain::Pet;
-use domain::PetType;
+use crate::domain::domain::{Pet, PetType};
 
 
 fn add(first_number: i32, second_number: i32) -> i32 {
