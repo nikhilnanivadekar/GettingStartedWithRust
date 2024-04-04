@@ -63,3 +63,4 @@ Available here: https://rust-lang.github.io/api-guidelines/naming.html
 - `pub(super)` makes an item visible to the parent module. This is equivalent to pub(in super).
 - `pub(self)` makes an item visible to the current module. This is equivalent to pub(in self) or not using pub at all.
 
+# Pattern Matching

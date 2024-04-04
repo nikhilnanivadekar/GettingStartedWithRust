@@ -8,3 +8,5 @@
 - Ownership
 - Re-declaring Variables
 - Code Organization
+- If time permits
+  - Pattern Matching
