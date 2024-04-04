@@ -47,7 +47,7 @@ fn main() {
     println!("Javaland is in {javaland_country}");
 
     let pet = Pet { name: String::from("Spike"), age: 2, pet_type: PetType::CAT };
-    println!("{:?}", pet)
+    println!("{:?}", pet);
 }
 
 #[cfg(test)]
