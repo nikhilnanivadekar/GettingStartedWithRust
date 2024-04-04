@@ -1,32 +1,5 @@
-#[derive(PartialEq, Debug, Clone)]
-pub(crate) enum PetType {
-    DOG,
-    CAT,
-}
-
-#[derive(PartialEq, Debug)]
-struct Person {
-    first_name: String,
-    last_name: String,
-    pets: Vec<Pet>,
-}
-
-#[derive(PartialEq, Debug, Clone)]
-pub(crate) struct Pet {
-    pub(crate) name: String,
-    pub(crate) age: i32,
-    pub(crate) pet_type: PetType,
-}
-
-trait PersonOperations {
-    fn has_pet(&self, pet_type: PetType) -> bool;
-}
-
-impl PersonOperations for Person {
-    fn has_pet(&self, pet_type: PetType) -> bool {
-        self.pets.iter().any(|pet| pet.pet_type == pet_type)
-    }
-}
+use crate::domain::person::Person;
+use crate::domain::pet::Pet;
 
 fn add_pet(person: Person, pet: Pet) -> Person {
     let mut pets: Vec<Pet> = person.pets;
@@ -40,7 +13,9 @@ fn add_pet(person: Person, pet: Pet) -> Person {
 
 #[cfg(test)]
 mod tests {
-    use crate::domain::domain::{add_pet, Person, PersonOperations, Pet, PetType};
+    use crate::domain::domain::{add_pet};
+    use crate::domain::person::{Person, PersonOperations};
+    use crate::domain::pet::{Pet, PetType};
 
     #[test]
     fn has_pet_test() {
