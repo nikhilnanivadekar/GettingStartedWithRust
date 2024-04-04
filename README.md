@@ -50,4 +50,16 @@ Available here: https://rust-lang.github.io/api-guidelines/naming.html
   - Convert mutable to immutable
   - Dynamic typing: Rust makes it safe
 
+# Modules
+- We need to explicitly build the module tree in Rust, there’s no implicit mapping to file system
+  - Hence, need to define a `mod`
+  - Rust makes everything private by default need to open it to public (structs and functions)
+  - Need to use the `use` syntax to "import" specific structs
+
+# Visibility
+- By default everything is private
+- `pub(in path)` makes an item visible within the provided path. path must be an ancestor module of the item whose visibility is being declared.
+- `pub(crate)` makes an item visible within the current crate.
+- `pub(super)` makes an item visible to the parent module. This is equivalent to pub(in super).
+- `pub(self)` makes an item visible to the current module. This is equivalent to pub(in self) or not using pub at all.
 
