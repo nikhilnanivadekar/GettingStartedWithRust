@@ -21,6 +21,58 @@ Rust focuses on speed, safety, semantics, and productivity. Rust can be consider
 # Naming Conventions
 Available here: https://rust-lang.github.io/api-guidelines/naming.html
 
+# Data structures
+## Vec
+```
+let vec = vec![1, 2, 3];
+for iter in vec.iter(){
+    println!("{}", iter);
+}
+```
+
+## Set
+```
+let mut set = HashSet::new();
+set.insert(1);
+set.insert(2);
+set.insert(3);
+set.insert(3);
+
+for iter in set.iter(){
+    println!("{}", iter);
+}
+```
+
+## Map
+```
+let mut map = HashMap::new();
+map.insert(1, "One");
+map.insert(2, "Two");
+map.insert(3, "Three");
+map.insert(3, "three");
+
+for (key, value) in map {
+    println!("Key:{} Value:{}", key, value);
+};
+```
+
+# Option
+- Option is an enum that consists of two values `None`, `Some(T)` where `T` is a generic
+- `None` is equivalent to `Optional.empty()` in Java
+- Rust does not have a `null`
+- `Some(T)` is like `Optional.of(T)` in Java
+- Reference: https://stackoverflow.com/a/24772148
+
+```
+let mut map = HashMap::new();
+map.insert(1, "One");
+map.insert(2, "Two");
+map.insert(3, "Three");
+
+println!("{:?}", map.get(&1)); // Prints Some("One")
+println!("{:?}", map.get(&4)); // Prints None
+```
+
 # Ownership
 - System of ownership is used for memory management
 - Compiler checks for a set of rules: 
@@ -64,3 +116,15 @@ Available here: https://rust-lang.github.io/api-guidelines/naming.html
 - `pub(self)` makes an item visible to the current module. This is equivalent to pub(in self) or not using pub at all.
 
 # Pattern Matching
+- Patterns have to be exhaustive 
+```
+let x = 1;
+
+match x{
+    1 => println!("Odd"),
+    2 => println!("Two"),
+    _ => println!("Nothing")
+}
+```
+- Reference: https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html
+
