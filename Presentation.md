@@ -2,11 +2,17 @@
 - Introduction
 - `toml` and `main.rs`
 - Canary Tests
-- Functions
+- Data structures
+  - List
+  - Set
+  - Map
+- Re-declaring Variables
 - Mutability
+- `Option`
+- Functions
+  - Addition
+  - Subtraction
 - More Testing
 - Ownership
-- Re-declaring Variables
+- Visibility
 - Code Organization
-- If time permits
-  - Pattern Matching
