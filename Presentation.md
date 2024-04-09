@@ -1,5 +1,7 @@
 Nikhil J. Nanivadekar
-Getting Started with Rust: https://github.com/nikhilnanivadekar/GettingStartedWithRust
+Getting Started with Rust: 
+
+https://github.com/nikhilnanivadekar/GettingStartedWithRust
 
 - Project Lead: Eclipse Collections
 - PE at Amazon Ads
@@ -18,15 +20,8 @@ Getting Started with Rust: https://github.com/nikhilnanivadekar/GettingStartedWi
   - Set
   - Map
 - Mutability
-  - Variables Immutable by default
-  - Can be made mutable by using the keyword `mut`
 - Re-declaring Variables
-  - allowed to redeclare variable
-  - idiomatic to redeclare in Rust
 - `Option`
-  - Equivalent for Optional from Java
-  - `None` is equivalent for Optional.empty()
-  - `Some(T)` is equivalent for Optional.of()
 - Ownership
 - Struct
 - Trait
